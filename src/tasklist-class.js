@@ -69,7 +69,6 @@ class TaskList {
     for (let i = 0; i < sortedArr.length; i += 1) {
       this.tasks[i].index = i + 1;
       const li = document.createElement('li');
-      // const label = document.createElement('label');
       const input = document.createElement('input');
 
       const checkmark = document.createElement('span');
