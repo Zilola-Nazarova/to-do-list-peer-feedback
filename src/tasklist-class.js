@@ -1,6 +1,5 @@
 import clearCompleted from './clear-completed.js';
 import addTask from './add-item.js';
-import completedIsFalse from './completed-filter.js';
 import Drag from './icons/drag-handle-minor-svgrepo-com.svg';
 import Bin from './icons/bin-svgrepo-com.svg';
 
