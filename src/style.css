@@ -10,6 +10,9 @@ body {
   justify-content: center;
   align-items: flex-start;
   background-color: #f1f1f1;
+}
+
+.roboto {
   font-family: 'Roboto', sans-serif;
 }
 
@@ -134,7 +137,6 @@ button {
 #clear button {
   margin: auto;
   color: #808080;
-  font-family: 'Roboto', sans-serif;
 }
 
 button.hidden {
