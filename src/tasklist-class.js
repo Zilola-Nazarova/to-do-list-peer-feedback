@@ -1,7 +1,7 @@
 import addTask from './add-item.js';
 import completedIsFalse from './completed-filter.js';
-import Drag from './drag-handle-minor-svgrepo-com.svg';
-import Bin from './bin-svgrepo-com.svg';
+import Drag from './icons/drag-handle-minor-svgrepo-com.svg';
+import Bin from './icons/bin-svgrepo-com.svg';
 
 class TaskList {
   constructor() {
