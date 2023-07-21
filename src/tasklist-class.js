@@ -1,4 +1,4 @@
-import TaskObject from './task-object.js';
+import addTask from './add-item.js';
 import completedIsFalse from './completed-filter.js';
 import Drag from './drag-handle-minor-svgrepo-com.svg';
 import Bin from './bin-svgrepo-com.svg';
@@ -12,13 +12,19 @@ class TaskList {
     const addButton = document.getElementById('add-btn');
     addButton.addEventListener('click', (event) => {
       event.preventDefault();
-      this.addingEventListener();
+      const description = document.getElementById('add-task').value;
+      if (description !== '') {
+        addTask(description, this.tasks);
+      }
     });
 
     document.getElementById('add-task').addEventListener('keypress', (event) => {
       if (event.key === 'Enter') {
         event.preventDefault();
-        this.addingEventListener();
+        const description = document.getElementById('add-task').value;
+        if (description !== '') {
+          addTask(description, this.tasks);
+        }
       }
     });
 
@@ -30,21 +36,6 @@ class TaskList {
     window.addEventListener('load', () => {
       this.renderList();
     });
-  }
-
-  addingEventListener() {
-    const description = document.getElementById('add-task').value;
-    if (description !== '') {
-      const aTask = new TaskObject(description, this.tasks.length);
-      this.addTask(aTask);
-      this.renderList();
-      document.getElementById('add-task').value = '';
-    }
-  }
-
-  addTask(aTask) {
-    this.tasks.push(aTask);
-    localStorage.setItem('To-Do List', JSON.stringify(this.tasks));
   }
 
   deleteTask(index) {
