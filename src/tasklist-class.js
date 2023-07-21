@@ -1,3 +1,4 @@
+import clearCompleted from './clear-completed.js';
 import addTask from './add-item.js';
 import completedIsFalse from './completed-filter.js';
 import Drag from './icons/drag-handle-minor-svgrepo-com.svg';
@@ -30,7 +31,8 @@ class TaskList {
 
     const clearBtn = document.getElementById('clear');
     clearBtn.addEventListener('click', () => {
-      this.clearCompleted();
+      clearCompleted(this.tasks);
+      this.tasks = JSON.parse(localStorage.getItem('To-Do List'));
     });
 
     window.addEventListener('load', () => {
