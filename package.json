@@ -1,7 +1,7 @@
 {
   "name": "to-do-list",
   "version": "1.0.0",
-  "description": "Microverse project",
+  "description": "This is a To-Do list app, that allows to create a list of tasks, add new tasks, delete, check as completed and cear completed tasks",
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
