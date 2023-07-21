@@ -97,12 +97,9 @@ li .checkmark.checked {
   border: none;
 }
 
-.checkmark::after {
+li .checkmark::after {
   content: "";
   display: none;
-}
-
-li .checkmark::after {
   position: relative;
   top: 2px;
   left: 7px;
