@@ -5,5 +5,5 @@ const listName = "Today's To Do";
 const label = document.querySelector('label');
 label.innerHTML = listName;
 
-const taskList = new TaskList();
-taskList.init();
+const TASK_LIST = new TaskList();
+TASK_LIST.init();
