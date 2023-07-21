@@ -1,5 +1,5 @@
 import './style.css';
-import TaskList from './TaskListClass.js';
+import TaskList from './tasklist-class';
 
 const listName = "Today's To Do";
 const label = document.querySelector('label');
